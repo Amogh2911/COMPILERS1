@@ -1,6 +1,6 @@
-# Name-B AMOGH
-# ROLL NO. - CS19BTECH11031
-# Mini-Assignment#1: Compilers and their Options
+## Name-B AMOGH
+## ROLL NO. - CS19BTECH11031
+## Mini-Assignment#1: Compilers and their Options
 A formal definition for LLVM is that it is a collection of compiler and toolchain technologies(toolchain can be considered as a chain of multiple steps). GCC is an optimising compiler whose functionality is the same as that of LLVM, but the two are different in their own unique ways. LLVM has a modular architecture. It is divided into 3 parts: Front-end, LLVM optimiser(the middle part), back-end. On a high level LLVM does the following. It converts any program(for example .c file) to .ll file(.ll file is also the LLVM IR file) which is then converted to .asm files(assembly code). Whereas GCC can be compared to that of a huge blackbox (most of the time you do not know what happens in that black box).
 
 ## Various options in common compilers: GCC and LLVM. 
@@ -11,10 +11,13 @@ GCC compiler has frontends for languages such as C(gcc), C++(g++),Objective C, A
 
 ## Various back ends that GCC, LLVM support
 GCC and LLVM support various types of backends such as x86, ARM and many more. I cross compiled my program so the executables I got can be executed on x86, ARM32, ARM64 bit processors. My program calculates the factorial of a number and prints it on the console. I then calculated the size of each of the executable file(i.e x86, ARM32, ARM64 executables): here are the sizes of these files:
+
 x86 executable size = 8.6 kB (8,560 bytes)
 32 bit ARM executable size =8.1 kB (8,068 bytes)
 64 bit ARM executable size =9.1 kB (9,120 bytes)
-NOTE: I also used clang on x86 architecture where I got the size of the executable file to be 8.2 kB (8,224 bytes).
+
+### NOTE: 
+I also used clang on x86 architecture where I got the size of the executable file to be 8.2 kB (8,224 bytes).
 Size depends on various factors, it varies from architecture to architecture.
 
 ## Optimization levels of compilers
@@ -47,7 +50,7 @@ We use the -o commands to perform optimisation, There are various optimisation c
 -Oz   real    0m0.002s
 
 ## Note: 
-here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference. Generally -o3 command is considered to be better . -02 optimises better than -01, -03 optimises better than -o2. Whereas os optimises the program space.
+here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference. Generally -o3 command is considered to be better . -02 optimises better than -01, -03 optimises better than -o2. Whereas os optimises the program space. -oz also optimises size, it is better than -os.
 
 
 
