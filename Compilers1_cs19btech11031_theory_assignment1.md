@@ -1,6 +1,7 @@
 ## Name-B AMOGH
 ## ROLL NO. - CS19BTECH11031
-## Mini-Assignment#1: Compilers and their Options
+# Mini-Assignment#1: Compilers and their Options
+## About LLVM and GCC
 A formal definition for LLVM is that it is a collection of compiler and toolchain technologies(toolchain can be considered as a chain of multiple steps). GCC is an optimising compiler whose functionality is the same as that of LLVM, but the two are different in their own unique ways. LLVM has a modular architecture. It is divided into 3 parts: Front-end, LLVM optimiser(the middle part), back-end. On a high level LLVM does the following. It converts any program(for example .c file) to .ll file(.ll file is also the LLVM IR file) which is then converted to .asm files(assembly code). Whereas GCC can be compared to that of a huge blackbox (most of the time you do not know what happens in that black box).
 
 ## Various options in common compilers: GCC and LLVM. 
@@ -49,8 +50,9 @@ We use the -o commands to perform optimisation, There are various optimisation c
 
 -Oz   real    0m0.002s
 
-## Note: 
-here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference. Generally -o3 command is considered to be better . -02 optimises better than -01, -03 optimises better than -o2. Whereas os optimises the program space. -oz also optimises size, it is better than -os.
+here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference. 
+Generally in both LLVM and GCC the -o3 command is considered to be better . -o2 optimises better than -o1, -o3 optimises better than -o2. Whereas os optimises the program space. -oz also optimises size, it is better than -os. 
+
 
 
 
