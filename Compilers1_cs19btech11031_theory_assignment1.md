@@ -56,7 +56,27 @@ Here the difference in time is very less since we used a basic factorial program
 
 Generally in both LLVM and GCC the -o3 command is considered to be better . -o2 optimises better than -o1, -o3 optimises better than -o2. Whereas os optimises the program space. -oz also optimises size, it is better than -os. 
 
+### Example program used by me
 
+I used the below program for applied optimiser commands. I also ran the below program and various architectures (using cross compiling) and found the sizes of executable files.
+```
+#include <stdio.h>
+
+unsigned long long int factorial(unsigned int i) {
+
+   if(i <= 1) {
+      return 1;
+   }
+   return i * factorial(i - 1);
+}
+
+int  main() {
+   int i = 5;
+   printf("Factorial of %d is %lld\n", i, factorial(i));
+   return 0;
+}
+
+```
 
 
 
