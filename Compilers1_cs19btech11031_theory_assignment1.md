@@ -46,7 +46,8 @@ We use the -o commands to perform optimisation, There are various optimisation c
 
 -Oz   real    0m0.002s
 
-## Note: here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference.
+## Note: 
+here the difference in time is very less since we used a basic factorial program. But in  general If we go for large code bases and compile them by applying these commands we will surely observe the difference. Generally -o3 command is considered to be better . -02 optimises better than -01, -03 optimises better than -o2. Whereas os optimises the program space.
 
 
 
